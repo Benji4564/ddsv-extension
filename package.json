@@ -1,0 +1,25 @@
+{
+  "name": "py",
+  "displayName": "DDSV",
+  "description": "Language support for dsv",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "py",
+      "aliases": ["DSV-Support", "py"],
+      "extensions": [".py"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "py",
+      "scopeName": "text.py",
+      "path": "./syntaxes/dsv.tmLanguage.json"
+    }]
+  }
+}

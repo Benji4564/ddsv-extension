@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "DSV-Support",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.untitled",
+				"match": "\\b(von|beziehe|wenn|lass|inwendig|type|print)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.dsv",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.dsv",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "text.py"
+}
