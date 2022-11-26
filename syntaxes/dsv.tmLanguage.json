@@ -7,13 +7,16 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.untitled",
-				"match": "\\b(von|beziehe|wenn|lass|inwendig|type|print)\\b"
+				"name": "keyword.control.py",
+				"match": "\\b(von|beziehe|wenn|lass|inwendig|definiere|derweil|abbruch|passiere|eingabe|versuche|sonst|schlussendlich|alternativ)\\b"
 			}]
 		},
 		"strings": {
