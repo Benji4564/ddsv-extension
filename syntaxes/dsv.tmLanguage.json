@@ -10,14 +10,70 @@
 		},
 		{
 			"include": "#numbers"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#punctuation"
+		},
+		{
+			"include": "#brackets"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#preprocessors"
+		},
+		{
+			"include": "#tags"
+		},
+		{
+			"include": "#attributes"
+		},
+		{
+			"include": "#sections"
+		},
+		{
+			"include": "#keywords2"
+		},
+		{
+			"include": "#support"
+		},
+		{
+			"include": "#storage"
+		},
+		{
+			"include": "#invalid"
+		},
+		{
+			"include": "#meta"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.py",
-				"match": "\\b(von|beziehe|wenn|lass|inwendig|definiere|derweil|abbruch|passiere|eingabe|versuche|sonst|schlussendlich|alternativ)\\b"
-			}]
+				"match": "\\b(von|beziehe|wenn|lass|inwendig|derweil|abbruch|passiere|eingabe|versuche|sonst|schlussendlich|alternativ|print|rückgabewert)\\b"
+			},
+			{
+				"name": "keyword.operator.dsv",
+				"match": "\\+|\\-|\\*|\\/|\\=|\\>|\\<|\\&|\\|"
+			}
+		]
 		},
 		"strings": {
 			"name": "string.quoted.double.dsv",
@@ -29,6 +85,27 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"support": {
+			"name": "support.function.name",
+			"match": "\\b(definiere)\\b"
+		},
+		"numbers": {
+			"name": "constant.numeric.dsv",
+			"match": "\\b\\d+\\b"
+		},
+		"comments": {
+			"name": "comment.line.number-sign.dsv",
+			"begin": "#",
+			"end": "$"
+		},
+		"variables": {
+			"name": "variable.other.dsv",
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]{0,31}\\b"
+		},
+		"types": {
+			"name": "support.type.dsv",
+			"match": "\\b\\w+\\b"
 		}
 	},
 	"scopeName": "text.py"
