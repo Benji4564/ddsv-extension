@@ -11,13 +11,13 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "py",
+      "id": "python",
       "aliases": ["DSV-Support", "py"],
       "extensions": [".py"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "py",
+      "language": "python",
       "scopeName": "text.py",
       "path": "./syntaxes/dsv.tmLanguage.json"
     }]
