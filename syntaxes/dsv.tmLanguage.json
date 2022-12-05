@@ -67,7 +67,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.py",
-				"match": "\\b(von|beziehe|wenn|lass|inwendig|derweil|abbruch|passiere|eingabe|versuche|sonst|schlussendlich|alternativ|print|rückgabewert)\\b"
+				"match": "\\b(von|beziehe|wenn|lass|inwendig|derweil|abbruch|passiere|definiere|eingabe|versuche|sonst|schlussendlich|alternativ|print|rückgabewert)\\b"
 			},
 			{
 				"name": "keyword.operator.dsv",
