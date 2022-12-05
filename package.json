@@ -14,12 +14,14 @@
       "id": "python",
       "aliases": ["DSV-Support", "py"],
       "extensions": [".py"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration.json",
+      ""
     }],
     "grammars": [{
       "language": "python",
       "scopeName": "text.py",
       "path": "./syntaxes/dsv.tmLanguage.json"
+
     }]
   }
 }
